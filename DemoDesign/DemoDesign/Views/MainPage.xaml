@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns      ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x     ="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local ="clr-namespace:DemoDesign"
+    xmlns:custom="clr-namespace:DemoDesign"
+    x:Class     ="DemoDesign.MainPage">
+    <ScrollView>
+        <StackLayout
+            Orientation    ="Vertical"
+            Spacing        ="20"
+            BackgroundColor="{StaticResource appThemeColor}">
+            <Image
+                Source="logo.png"
+                Style ="{StaticResource imageViewStyle}" />
+            <Frame
+                Style="{StaticResource frameStyle}">
+                <custom:CustomEntry
+                    Style      ="{StaticResource entryStyle}"
+                    Placeholder="{StaticResource emailPlaceholder}"
+                    Margin     ="10,0,0,0">
+                    <custom:CustomEntry.FontSize>
+                        <x:Double>13</x:Double>
+                    </custom:CustomEntry.FontSize>
+                </custom:CustomEntry>
+            </Frame>
+            <Frame
+                Style="{StaticResource frameStyle}">
+                <custom:CustomEntry
+                    Style      ="{StaticResource entryStyle}"
+                    Placeholder="{StaticResource passwordPlaceholder}"
+                    IsPassword ="True"
+                    Margin     ="10,0,0,0">
+                    <custom:CustomEntry.FontSize>
+                        <x:Double>13</x:Double>
+                    </custom:CustomEntry.FontSize>
+                </custom:CustomEntry>
+            </Frame>
+            <Label
+                Style="{StaticResource labelStyle}"
+                Text ="{StaticResource standardString}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        NumberOfTapsRequired="1"
+                        Command             ="{Binding ForgetPassCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Button
+              Style  ="{StaticResource buttonStyle}"
+                Text   ="{StaticResource enter}"
+                Command="{Binding EnterCommand}"
+               />
+           <Label
+                Style            ="{StaticResource labelStyle}"
+                Text             ="{StaticResource enterPlaceholder}"
+                HorizontalOptions="Start" />
+            <Frame
+                Style        ="{StaticResource frameStyle}"
+                HeightRequest="50">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="1" />
+                        <ColumnDefinition
+                            Width="3*" />
+                        <ColumnDefinition
+                            Width="1.5*" />
+                    </Grid.ColumnDefinitions>
+                    <custom:CustomEntry
+                        Grid.Column   ="0"
+                        Margin        ="8,0,0,0"
+                        Style         ="{StaticResource entryStyle}"
+                        Image         ="dropdown"
+                        imageAlignment="Right"
+                        Text          ="+1">
+                        <custom:CustomEntry.FontSize>
+                            <x:Double>14</x:Double>
+                        </custom:CustomEntry.FontSize>
+                        <custom:CustomEntry.GestureRecognizers>
+                            <TapGestureRecognizer
+                                NumberOfTapsRequired="1"
+                                Command             ="{ Binding CountryCodeCommand}" />
+                        </custom:CustomEntry.GestureRecognizers>
+                    </custom:CustomEntry>
+                    <Button
+                        Grid.Column    ="0"
+                        BackgroundColor="Transparent"
+                        Command        ="{Binding CountryCodeCommand}" />
+                    <BoxView
+                        Grid.Column      ="1"
+                        VerticalOptions  ="Center"
+                        HorizontalOptions="Fill"
+                        Margin           ="0,10"
+                        BackgroundColor  ="{StaticResource placeHolderColor}" />
+                    <custom:CustomEntry
+                        Grid.Column="2"
+                        Style      ="{StaticResource entryStyle}"
+                        Placeholder="{StaticResource mobilePlaceholder}">
+                        <custom:CustomEntry.FontSize>
+                            <x:Double>14</x:Double>
+                        </custom:CustomEntry.FontSize>
+                    </custom:CustomEntry>
+                    <Button
+                        Grid.Column="3"
+                        Style      ="{StaticResource buttonStyle}"
+                        Text       ="{StaticResource otp}"
+                        Margin     ="0,0,-10,0"
+                        Padding="8,0"
+                        Command    ="{Binding GetOtpCommand}" />
+                </Grid>
+            </Frame>
+            <Grid
+                BackgroundColor="{StaticResource backgroundColor}"
+                VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="2*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="2*" />
+                    <ColumnDefinition
+                        Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row   ="0"
+                    Grid.Column="0"
+                    Style      ="{StaticResource bottomLabelStyle}"
+                    Text       ="{StaticResource noAccount}" />
+                <Label
+                    Grid.Row         ="0"
+                    Grid.Column      ="1"
+                    Style            ="{StaticResource bottomLabelStyle}"
+                    Text             ="{StaticResource clickHere}"
+                    TextColor        ="SteelBlue"
+                    HorizontalOptions="StartAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            Command             ="{Binding ClickHereCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image
+                    Grid.Row       ="1"
+                    Grid.Column    ="0"
+                    Grid.ColumnSpan="2"
+                    Source         ="picture.png"
+                    VerticalOptions="CenterAndExpand" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

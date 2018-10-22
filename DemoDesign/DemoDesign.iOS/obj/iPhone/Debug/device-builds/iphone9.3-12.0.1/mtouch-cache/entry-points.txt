@@ -1,0 +1,29 @@
+Function=xamarin_timezone_get_data
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/mscorlib.dll
+Function=CreateZStream
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/System.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/nidhisood/Downloads/DemoDesign/DemoDesign/DemoDesign/DemoDesign.iOS/obj/iPhone/Debug/device-builds/iphone9.3-12.0.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=mono_pmip

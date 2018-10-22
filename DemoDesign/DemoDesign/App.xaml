@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoDesign.App"
+             xmlns:custom="clr-namespace:DemoDesign">
+    <Application.Resources>
+        <ResourceDictionary>
+<!--Global Styles-->
+
+            <Color x:Key="appThemeColor">White</Color>
+            <Color x:Key="buttonColor">#484848</Color>
+            <Color x:Key="backgroundColor">#E0E0E0</Color>
+            <Color x:Key="textColor">#8386D3</Color>
+            <Color x:Key="placeHolderColor">#bfb7b7</Color>
+
+            <OnPlatform x:Key="framePadding" Android="10" iOS="0" x:TypeArguments="Thickness"/>
+            
+            <Style
+                x:Key="frameStyle"
+                TargetType="Frame"
+                >
+                <Setter Property="HasShadow"
+                        Value="True"/>
+                <Setter Property="OutlineColor"
+                        Value="White"/>
+                <Setter Property="HeightRequest"
+                        Value="40"/>
+                <Setter Property="Margin"
+                        Value="30,0"/>
+                <Setter Property="Padding"
+                        Value="{StaticResource framePadding}"/>
+                <Setter Property="BorderColor"
+                        Value="White"/>
+            </Style>
+            
+            <Style
+                x:Key="entryStyle"
+                TargetType="custom:CustomEntry"
+                >
+                <Setter Property="BackgroundColor"
+                        Value="Transparent"/>
+                <Setter Property="TextColor"
+                        Value="Gray"/>
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource placeHolderColor}"/>
+                <Setter Property="Margin"
+                        Value="0,0"/>
+                <Setter Property="HeightRequest"
+                        Value="40"/>
+                <Setter Property="BorderColor"
+                        Value="White"/>
+                <Setter Property="BorderWidth"
+                        Value="0"/>
+            </Style>
+            <Style
+                x:Key     ="imageViewStyle"
+                TargetType="Image">
+                               <Setter
+                    Property="HorizontalOptions"
+                    Value   ="FillAndExpand" />
+                <Setter
+                    Property="Aspect"
+                    Value   ="AspectFit" />
+                <Setter Property="Margin"
+                     Value="30,50,40,0"/>
+            </Style>
+
+            <Style
+                x:Key="labelStyle"
+                TargetType="Label"
+                >
+                <Setter Property="TextColor"
+                        Value="Gray"/>
+                <Setter Property="BackgroundColor"
+                        Value="Transparent"/>
+                <Setter Property="HorizontalOptions"
+                        Value="End"/>
+                <Setter Property="Font"
+                        Value="12"/>
+                <Setter Property="Margin"
+                        Value="30,0"/>
+            </Style>
+            
+            <Style
+                x:Key="bottomLabelStyle"
+                TargetType="Label"
+                >
+                <Setter Property="TextColor"
+                        Value="Gray"/>
+                <Setter Property="BackgroundColor"
+                        Value="Transparent"/>
+                <Setter Property="HorizontalOptions"
+                        Value="End"/>
+                <Setter Property="Font"
+                        Value="16"/>
+                <Setter Property="Margin"
+                        Value="0,30"/>
+            </Style>
+            
+            <Style
+                x:Key="buttonStyle"
+                TargetType="Button"
+                >
+                <Setter Property="BackgroundColor"
+                        Value="{StaticResource buttonColor}"/>
+                <Setter Property="TextColor"
+                        Value="{StaticResource appThemeColor}"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="Padding" Value="30,0"/>
+            </Style>
+            
+            <!--Globally declared strings-->
+            <x:String                x:Key="emailPlaceholder">Enter your Email ID</x:String>
+            <x:String                x:Key="passwordPlaceholder">Password</x:String>
+            <x:String                x:Key="enter">Enter</x:String>
+            <x:String                x:Key="standardString">Lorem Ipsum ?</x:String>
+            <x:String                x:Key="enterPlaceholder">lorem ipsum enter</x:String>
+            <x:String                x:Key="mobilePlaceholder">Mobile Number</x:String>
+            <x:String                x:Key="otp">Get OTP</x:String>
+            <x:String                x:Key="noAccount">Don't have an account? </x:String>
+            <x:String                x:Key="clickHere">Click Here</x:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

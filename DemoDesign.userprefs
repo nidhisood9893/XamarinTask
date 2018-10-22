@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{8B61170A-46EF-4568-98C0-54554CE37F71}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DemoDesign/DemoDesign.Android/Resources/values/styles.xml">
+    <Files>
+      <File FileName="DemoDesign/DemoDesign.Android/Resources/values/styles.xml" Line="12" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DemoDesign.Android PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MultiItemStartupConfigurations />
+</Properties>
