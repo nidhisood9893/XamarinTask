@@ -13,7 +13,9 @@
             <Color x:Key="textColor">#8386D3</Color>
             <Color x:Key="placeHolderColor">#bfb7b7</Color>
 
-            <OnPlatform x:Key="framePadding" Android="10" iOS="0" x:TypeArguments="Thickness"/>
+            <OnPlatform x:Key="framePadding" Android="0,10,0,0" iOS="0" x:TypeArguments="Thickness"/>
+            <OnPlatform x:Key="buttonPadding" Android="8,0" iOS="30,0" x:TypeArguments="Thickness"/>
+            <OnPlatform x:Key="otpButtonMargin" Android="0,0,-5,0" iOS="0,0,-10,0" x:TypeArguments="Thickness"/>
             
             <Style
                 x:Key="frameStyle"
@@ -106,7 +108,7 @@
                 <Setter Property="TextColor"
                         Value="{StaticResource appThemeColor}"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
-                <Setter Property="Padding" Value="30,0"/>
+                <Setter Property="Padding" Value="{StaticResource buttonPadding}"/>
             </Style>
             
             <!--Globally declared strings-->

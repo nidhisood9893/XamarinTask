@@ -155,10 +155,18 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\dropdown.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\picture.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\dropdown.imageset\dropdown.png" />
-    <ImageAsset Include="Assets.xcassets\picture.imageset\picture.png" />
+    <ImageAsset Include="Assets.xcassets\dropdown.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\picture.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\dropdown.imageset\dropdown.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\picture.imageset\picture.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -170,10 +178,6 @@
     <PackageReference Include="Xamarin.Forms">
       <Version>3.3.0.912540</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets.xcassets\dropdown.imageset\" />
-    <Folder Include="Assets.xcassets\picture.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\DemoDesign\DemoDesign.projitems" Label="Shared" />

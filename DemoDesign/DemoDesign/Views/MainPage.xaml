@@ -56,7 +56,8 @@
                 HorizontalOptions="Start" />
             <Frame
                 Style        ="{StaticResource frameStyle}"
-                HeightRequest="50">
+                HeightRequest="50"
+                Padding="0">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition
@@ -68,13 +69,20 @@
                         <ColumnDefinition
                             Width="1.5*" />
                     </Grid.ColumnDefinitions>
+
+                    <!-- entry Margin        ="8,10,0,0"-->
                     <custom:CustomEntry
                         Grid.Column   ="0"
-                        Margin        ="8,0,0,0"
                         Style         ="{StaticResource entryStyle}"
                         Image         ="dropdown"
                         imageAlignment="Right"
                         Text          ="+1">
+                        <custom:CustomEntry.Margin>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android">8,10,0,0</On>
+                                <On Platform="iOS">8,0,0,0</On>
+                            </OnPlatform>
+                        </custom:CustomEntry.Margin>
                         <custom:CustomEntry.FontSize>
                             <x:Double>14</x:Double>
                         </custom:CustomEntry.FontSize>
@@ -97,7 +105,14 @@
                     <custom:CustomEntry
                         Grid.Column="2"
                         Style      ="{StaticResource entryStyle}"
+                        
                         Placeholder="{StaticResource mobilePlaceholder}">
+                        <custom:CustomEntry.Margin>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android">0,10,0,0</On>
+                                <On Platform="iOS">0</On>
+                            </OnPlatform>
+                        </custom:CustomEntry.Margin>
                         <custom:CustomEntry.FontSize>
                             <x:Double>14</x:Double>
                         </custom:CustomEntry.FontSize>
@@ -106,10 +121,11 @@
                         Grid.Column="3"
                         Style      ="{StaticResource buttonStyle}"
                         Text       ="{StaticResource otp}"
-                        Margin     ="0,0,-10,0"
-                        Padding="8,0"
+                        Margin     ="{StaticResource otpButtonMargin}"
+                        
                         Command    ="{Binding GetOtpCommand}" />
                 </Grid>
+                <!--Padding="8,0"-->
             </Frame>
             <Grid
                 BackgroundColor="{StaticResource backgroundColor}"
